@@ -2,10 +2,10 @@ def move(my_list, direction=None):
     # Finds the index of the one in the list
     index_of_one = my_list.index(1)
 
-    if index_of_one == 0 :
+    if index_of_one == 0 and direction == "left" :
       return my_list
   
-    elif index_of_one == len(my_list) -1 :
+    elif index_of_one == len(my_list) -1 and direction == "right" :
            return my_list
         
     elif  direction == 'right':
