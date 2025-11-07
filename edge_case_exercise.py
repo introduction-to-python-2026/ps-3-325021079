@@ -6,18 +6,18 @@ def move(my_list, direction=None):
     if direction is None:
         return my_list
    #אם יש רק ערך 1 שהוא 1 
-    elif my_list[0] == 1 and len(my_list) == 1 :
+    if my_list[0] == 1 and len(my_list) == 1 :
         return my_list
 
     #אם קצה שמאל הוא 1
-    elif index_of_one == 0 and direction == "left" :
+    if index_of_one == 0 and direction == "left" :
         return my_list
   
     #אם קצה ימין הוא 1
-    elif index_of_one == len(my_list) -1 and direction == "right" :
+    if index_of_one == len(my_list) -1 and direction == "right" :
         return my_list
         
-    elif  direction == 'right':
+    if  direction == 'right':
            my_list[index_of_one] = 0
            my_list[index_of_one + 1] = 1
     
